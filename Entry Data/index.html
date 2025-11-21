@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Al Fajr</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li>Entry Data Kasus</li>
+                <li>Rekap Data</li>
+            </ul>
+            <button class="logout">Logout</button>
+        </aside>
+
+        <main class="main">
+            <div class="header-top">
+                <span class="admin-icon"></span>Admin
+            </div>
+
+        <h2>Entry Data Kasus</h2>
+
+        <div class="form-wrapper">
+
+    <form id="formKasus" class="form-grid">
+        <div>
+            <label>Tanggal kejadian</label>
+            <input type="date" class="tanggal">
+        </div>
+
+        <div>
+            <label>Nama Santri</label>
+            <input type="text" class="namaSantri">
+        </div>
+
+        <div>
+            <label>Asal Koordinator</label>
+            <input type="text" class="asalKoordinator">
+        </div>
+
+        <div>
+            <label>Kelas</label>       
+            <input type="text" class="kelas">
+        </div>
+
+        <div>
+            <label>Status</label>
+            <select class="status">
+                <option>Pilih status</option>
+                <option>Menunggu</option>
+                <option>Selesai</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Nomor Induk</label>
+            <input type="text" class="nomorInduk">
+        </div>
+
+        <div>
+            <label>Nomor Orang tua</label>
+            <input type="text" class="nomorOrangTua">
+        </div>
+
+        <div>
+            <label>Kamar</label>
+            <input type="text" class="kamar">
+        </div>
+
+        <div class="col-full">
+            <label>Wali Kamar</label>
+            <input type="text" class="waliKamar">
+        </div>
+
+<div class="form-section">
+    <label for="kronologi">Kronologi Kasus</label>
+    <button type="button" class="btn btn-primary" title="Gunakan Editor Manual">Gunakan Editor Manual</button>
+    <textarea id="kronologi" name="kronologi" rows="4" placeholder="Tulis kronologi kasus..."></textarea>
+</div>
+
+<div class="form-section">
+    <label for="uploadFile" style="display:block;">Upload File:</label>
+    <input type="file" id="uploadFile" name="uploadFile" />
+        <span style="font-size:0.96em; color:#aaa;" class="file-info">No file chosen</span>
+
+</div>
+
+<div class="form-section btn-group">
+    <button type="submit" class="btn btn-success" formaction="#">Preview</button>
+    <i class="fa-solid fa-eye"></i>
+    <button type="submit" class="btn btn-primary" formaction="#">Print</button>
+    <i class="fa-solid fa-print"></i>
+    <button type="submit" class="btn btn-danger" formaction="#">Simpan PDF</button>
+    <i class="fa-solid fa-file-pdf"></i>
+    <button type="submit" class="btn btn-purple">Simpan Data</button>
+    <i class="fa-solid fa-floppy-disk"></i>
+</div>
+            </form>
+        </main>
+        </div>
+    </div>
+
+
+</body> 
+</html>
